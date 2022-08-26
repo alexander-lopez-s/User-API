@@ -5,27 +5,26 @@
 		<link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>User API</title>
-		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+			rel="stylesheet"
+		/>
 		<link href="./client/styles/index.css" rel="stylesheet" />
 	</head>
 	<body>
-    <div class="container">
-		<di class="header">
-			<h1>Welcome to user API</h1>
-		</di>
-		<div class="search-section">
-			<button id="display-users" onclick="getData()">Get users</button>
-			<div>
-			<input id="search-bar" type="text" placeholder="Search by ID" onkeyup="searchUser()"/>
+		<div class="container">
+			<di class="header">
+				<h1>Welcome to user API</h1>
+			</di>
+			<div class="search-section">
+				<button id="display-users">Get users</button>
+				<div>
+					<input id="search-bar" type="text" placeholder="Search by ID" />
+					<button id="search-user">Search specific user</button>
+				</div>
+			</div>
+			<div id="show-results"></div>
 		</div>
-		</div>
-		<div id="show-results">
-			<p id = "could-not-load"></p>
-		</div>
-		<div class="id-not-found">
-		</div>
-	</div>
-
-		<script src="./client/src/init.js"></script>
+		<script type="module" src="./client/src/init.js"></script>
 	</body>
 </html>
